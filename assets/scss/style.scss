@@ -25,7 +25,7 @@
 body {background: $color-primary;}
 .decor {
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
   margin: 50px auto 0;
   background: $color-light;
   border-radius: 30px;
@@ -97,7 +97,7 @@ body {background: $color-primary;}
   margin-top: 1.87em;
   background:$color-accent;
   color: $color-light;
-  font-size: 0.87em;
+  font-size: 1.1em;
 }
 .form-inner textarea {resize: none;}
 .form-inner h3 {
@@ -107,3 +107,36 @@ body {background: $color-primary;}
   font-size: 1.5em;
   color: $color-gray-dark;
 }
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  
+  background: $color-accent;
+  border-radius: 50px;
+  color: $color-light;
+  cursor: pointer;
+  display: inline-block;
+    font-family: $font-main;
+    font-size: $font-size;
+  font-weight: 500;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  &:hover {
+    background-color: darken($color-accent, 10%);
+  }
+  &.btn-1 {
+    background-color: $color-accent;
+    box-shadow: 0 6px darken($color-accent, 10%);
+    transition: none;
+    &:hover {
+      box-shadow: 0 4px darken($color-accent, 10%);
+      top: 2px;
+    }
+  }}
